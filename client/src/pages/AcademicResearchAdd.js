@@ -103,7 +103,7 @@ const handleSave = async () => {
     formData.append("document", selectedFile);
 
     const res = await axios.post(
-      "http://localhost:5000/api/academic-research",
+      "http://https://nba-accreditation-system-production.up.railway.app/api/academic-research",
       formData
     );
 

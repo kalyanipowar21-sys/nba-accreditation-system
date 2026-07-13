@@ -27,7 +27,7 @@ if (poPsoFile) {
   formData.append("justificationFile", justificationFile);
 }
     const response = await fetch(
-      "http://localhost:5000/save-popso",
+      "http://https://nba-accreditation-system-production.up.railway.app/save-popso",
       {
         method: "POST",
         body: formData
@@ -59,14 +59,14 @@ const handleView = (fileName) => {
   if (extension === "pdf") {
 
     window.open(
-      `http://localhost:5000/uploads/${fileName}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/uploads/${fileName}`,
       "_blank"
     );
 
   } else {
 
     window.open(
-      `http://localhost:5000/download/${fileName}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/download/${fileName}`,
       "_blank"
     );
 
@@ -81,7 +81,7 @@ const handleDownload = (fileName) => {
   }
 
   window.open(
-    `http://localhost:5000/download/${fileName}`,
+    `http://https://nba-accreditation-system-production.up.railway.app/download/${fileName}`,
     "_blank"
   );
 
@@ -98,7 +98,7 @@ const handlePrint = (fileName) => {
   if (extension === "pdf") {
 
     const win = window.open(
-      `http://localhost:5000/uploads/${fileName}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/uploads/${fileName}`,
       "_blank"
     );
 
@@ -112,7 +112,7 @@ const handlePrint = (fileName) => {
   } else {
 
     window.open(
-      `http://localhost:5000/download/${fileName}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/download/${fileName}`,
       "_blank"
     );
 

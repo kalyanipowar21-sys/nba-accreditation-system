@@ -90,7 +90,7 @@ for (const pair of formData.entries()) {
   console.log(pair[0], pair[1]);
 }
     const response = await fetch(
-      "http://localhost:5000/save-curriculum",
+      "http://https://nba-accreditation-system-production.up.railway.app/save-curriculum",
       {
         method: "POST",
         body: formData
@@ -121,14 +121,14 @@ const handleView = (file) => {
   if (extension === "pdf") {
 
     window.open(
-      `http://localhost:5000/uploads/${file.name}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/uploads/${file.name}`,
       "_blank"
     );
 
   } else {
 
     window.open(
-      `http://localhost:5000/download/${file.name}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/download/${file.name}`,
       "_blank"
     );
 
@@ -143,7 +143,7 @@ const handleFileDownload = (file) => {
   }
 
   window.open(
-    `http://localhost:5000/download/${file.name}`,
+    `http://https://nba-accreditation-system-production.up.railway.app/download/${file.name}`,
     "_blank"
   );
 
@@ -160,7 +160,7 @@ const handleFilePrint = (file) => {
   if (extension === "pdf") {
 
     const win = window.open(
-      `http://localhost:5000/uploads/${file.name}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/uploads/${file.name}`,
       "_blank"
     );
 
@@ -174,7 +174,7 @@ const handleFilePrint = (file) => {
   } else {
 
     window.open(
-      `http://localhost:5000/download/${file.name}`,
+      `http://https://nba-accreditation-system-production.up.railway.app/download/${file.name}`,
       "_blank"
     );
 

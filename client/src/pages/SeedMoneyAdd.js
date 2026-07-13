@@ -106,7 +106,7 @@ const handleSave = async () => {
     formData.append("document", selectedFile);
 
     const res = await axios.post(
-      "http://localhost:5000/api/seed-money",
+      "http://https://nba-accreditation-system-production.up.railway.app/api/seed-money",
       formData
     );
 

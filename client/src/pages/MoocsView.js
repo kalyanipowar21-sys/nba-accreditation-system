@@ -14,7 +14,7 @@ useEffect(()=>{
 const loadRecords = async()=>{
 
    const res=await axios.get(
-      "http://localhost:5000/api/moocs"
+      "http://https://nba-accreditation-system-production.up.railway.app/api/moocs"
    );
 
    setRecords(res.data);
@@ -26,7 +26,7 @@ const handleDelete = async(id)=>{
    if(!window.confirm("Delete Record?")) return;
 
    await axios.delete(
-      `http://localhost:5000/api/moocs/${id}`
+      `http://https://nba-accreditation-system-production.up.railway.app/api/moocs/${id}`
    );
 
    loadRecords();

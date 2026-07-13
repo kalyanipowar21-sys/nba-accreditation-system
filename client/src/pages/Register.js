@@ -42,7 +42,7 @@ function Register() {
    const response =
    await axios.post(
 
-   "http://localhost:5000/register",
+   "http://https://nba-accreditation-system-production.up.railway.app/register",
 
    data
 

@@ -14,7 +14,7 @@ console.log(courses);
   if (!department) return;
 
   const res = await fetch(
-    `http://localhost:5000/get-course-master/${department}`
+    `https://nba-accreditation-system-production.up.railway.app${department}`
   );
 
   const data = await res.json();
@@ -56,7 +56,7 @@ const handleSave = async () => {
     for (const row of courses) {
 
       await fetch(
-        "http://localhost:5000/save-all-courses-matrix",
+        "http://https://nba-accreditation-system-production.up.railway.app/save-all-courses-matrix",
         {
           method: "POST",
 
@@ -113,7 +113,7 @@ for(const row of courses){
 
 await fetch(
 
-`http://localhost:5000/update-all-courses-matrix/${row.id}`,
+`http://https://nba-accreditation-system-production.up.railway.app/update-all-courses-matrix/${row.id}`,
 
 {
 
@@ -168,7 +168,7 @@ return;
 
 await fetch(
 
-`http://localhost:5000/delete-all-courses-matrix/${id}`,
+`http://https://nba-accreditation-system-production.up.railway.app/delete-all-courses-matrix/${id}`,
 
 {
 method:"DELETE"

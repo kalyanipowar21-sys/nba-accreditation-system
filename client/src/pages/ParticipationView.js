@@ -14,7 +14,7 @@ const [records, setRecords] = useState([]);
     try {
 
         const res = await axios.get(
-            "http://localhost:5000/api/participations"
+            "http://https://nba-accreditation-system-production.up.railway.app/api/participations"
         );
 
         setRecords(res.data);
@@ -33,7 +33,7 @@ const handleDelete = async (id) => {
     try {
 
         await axios.delete(
-            `http://localhost:5000/api/participations/${id}`
+            `http://https://nba-accreditation-system-production.up.railway.app/api/participations/${id}`
         );
 
         loadRecords();

@@ -14,7 +14,7 @@ const loadRecords = async () => {
     try {
 
         const res = await axios.get(
-            "http://localhost:5000/api/sponsored-research"
+            "http://https://nba-accreditation-system-production.up.railway.app/api/sponsored-research"
         );
 
         setRecords(res.data);
@@ -33,7 +33,7 @@ const handleDelete = async (id) => {
     try {
 
         await axios.delete(
-            `http://localhost:5000/api/sponsored-research/${id}`
+            `http://https://nba-accreditation-system-production.up.railway.app/api/sponsored-research/${id}`
         );
 
         loadRecords();

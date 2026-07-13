@@ -12,7 +12,7 @@ useEffect(() => {
 const loadMemberships = async () => {
   try {
     const res = await axios.get(
-      "http://localhost:5000/api/memberships"
+      "http://https://nba-accreditation-system-production.up.railway.app/api/memberships"
     );
 
     setRecords(res.data);
@@ -28,7 +28,7 @@ const handleDelete = async (id) => {
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/memberships/${id}`
+      `http://https://nba-accreditation-system-production.up.railway.app/api/memberships/${id}`
     );
 
     loadMemberships();

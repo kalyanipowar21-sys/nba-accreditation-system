@@ -14,7 +14,7 @@ useEffect(() => {
 const loadRecords = async () => {
 
   const res = await axios.get(
-    "http://localhost:5000/api/resource-persons"
+    "http://https://nba-accreditation-system-production.up.railway.app/api/resource-persons"
   );
 
   setRecords(res.data);
@@ -25,7 +25,7 @@ const handleDelete = async (id) => {
   if (!window.confirm("Delete this record?")) return;
 
   await axios.delete(
-    `http://localhost:5000/api/resource-persons/${id}`
+    `http://https://nba-accreditation-system-production.up.railway.app/api/resource-persons/${id}`
   );
 
   loadRecords();

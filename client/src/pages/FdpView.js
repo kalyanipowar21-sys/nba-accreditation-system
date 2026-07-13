@@ -14,7 +14,7 @@ useEffect(() => {
 const loadRecords = async () => {
 
     const res = await axios.get(
-        "http://localhost:5000/api/fdp-records"
+        "http://https://nba-accreditation-system-production.up.railway.app/api/fdp-records"
     );
 
     setRecords(res.data);
@@ -26,7 +26,7 @@ const handleDelete = async (id) => {
     if (!window.confirm("Delete this record?")) return;
 
     await axios.delete(
-        `http://localhost:5000/api/fdp-records/${id}`
+        `http://https://nba-accreditation-system-production.up.railway.app/api/fdp-records/${id}`
     );
 
     loadRecords();

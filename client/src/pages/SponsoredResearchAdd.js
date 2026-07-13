@@ -126,7 +126,7 @@ const handleSave = async () => {
     formData.append("document", selectedFile);
 
     const res = await axios.post(
-      "http://localhost:5000/api/sponsored-research",
+      "http://https://nba-accreditation-system-production.up.railway.app/api/sponsored-research",
       formData
     );
 

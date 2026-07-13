@@ -109,7 +109,7 @@ if (
     }
 
     const res = await axios.post(
-      "http://localhost:5000/api/memberships",
+      "http://https://nba-accreditation-system-production.up.railway.app/api/memberships",
       formData
     );
 

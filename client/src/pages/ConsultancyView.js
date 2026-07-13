@@ -18,7 +18,7 @@ function ConsultancyView() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/consultancy-work"
+        "http://https://nba-accreditation-system-production.up.railway.app/api/consultancy-work"
       );
 
       setRecords(res.data);
@@ -38,7 +38,7 @@ function ConsultancyView() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/consultancy-work/${id}`
+        `http://https://nba-accreditation-system-production.up.railway.app/api/consultancy-work/${id}`
       );
 
       loadRecords();
@@ -111,7 +111,7 @@ function ConsultancyView() {
                 <td>
                   {item.document ? (
                     <a
-                      href={`http://localhost:5000/uploads/${item.document}`}
+                      href={`http://https://nba-accreditation-system-production.up.railway.app/uploads/${item.document}`}
                       target="_blank"
                       rel="noreferrer"
                     >

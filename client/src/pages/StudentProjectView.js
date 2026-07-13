@@ -16,7 +16,7 @@ const loadRecords = async () => {
     try {
 
         const res = await axios.get(
-            "http://localhost:5000/api/student-projects"
+            "http://https://nba-accreditation-system-production.up.railway.app/api/student-projects"
         );
 
         setRecords(res.data);
@@ -35,7 +35,7 @@ const handleDelete = async (id) => {
     try {
 
         await axios.delete(
-            `http://localhost:5000/api/student-projects/${id}`
+            `http://https://nba-accreditation-system-production.up.railway.app/api/student-projects/${id}`
         );
 
         loadRecords();
