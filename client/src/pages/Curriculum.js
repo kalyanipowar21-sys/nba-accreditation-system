@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import "./Curriculum.css";
 import {
-  FaBell,
   FaBook,
   FaGraduationCap,
   FaFlask,
   FaCloudUploadAlt,
   FaEdit,
-  FaTrash,
-  FaSave,
-  FaSyncAlt
+  FaTrash
 } from "react-icons/fa";
 import { FaDownload, FaPrint, FaEye } from "react-icons/fa";
 

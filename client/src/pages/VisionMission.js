@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./VisionMission.css";
-import { MdDelete } from "react-icons/md";
 import { FaDownload, FaPrint } from "react-icons/fa";
 function VisionMission({ onNext }) {
 const [vision, setVision] = useState(
@@ -70,7 +69,7 @@ if (peoFile1) formData.append("peoFile1", peoFile1);
 if (peoFile2) formData.append("peoFile2", peoFile2);
 if (peoFile3) formData.append("peoFile3", peoFile3);
 const response = await fetch(
-  "http://https://nba-accreditation-system-production.up.railway.app/save-vision",
+  "https://nba-accreditation-system-production.up.railway.app/save-vision",
   {
     method: "POST",
     body: formData

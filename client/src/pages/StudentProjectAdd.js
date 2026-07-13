@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./StudentProjectAdd.css";
@@ -99,7 +99,7 @@ const handleSave = async () => {
     formData.append("document", selectedFile);
 
     const res = await axios.post(
-      "http://https://nba-accreditation-system-production.up.railway.app/api/student-projects",
+      "https://nba-accreditation-system-production.up.railway.app/api/student-projects",
       formData
     );
 
