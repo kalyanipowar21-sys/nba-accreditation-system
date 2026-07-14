@@ -42,8 +42,7 @@ const [pos, setPos] = useState([]);
 const [selectedSubject, setSelectedSubject] = useState("");
 const [matrixRows, setMatrixRows] = useState([]);
 const [courseMatrix,setCourseMatrix]=useState([]);
-const [coSubject, setCoSubject] = useState("");
-const [matrixSubject, setMatrixSubject] = useState("");
+
 const loadCourseMatrix = async () => {
 
   try {
@@ -106,7 +105,7 @@ const loadCourseOutcomes = async () => {
   }
 
 };
-const [courseSummary,setCourseSummary]=useState([]);
+
 
 
 const [courseOutcomes, setCourseOutcomes] = useState([]);
@@ -116,7 +115,7 @@ useEffect(() => {
 
   loadCourseMatrix();
 
-  //loadCourseSummary();
+
   loadPOs();
 
 }, []);
@@ -132,17 +131,6 @@ useEffect(() => {
 
 }, [selectedSubject]);
 
-const loadCourseSummary = async()=>{
-
-const res=await fetch(
-"http://https://nba-accreditation-system-production.up.railway.app/get-course-summary"
-);
-
-const data=await res.json();
-
-setCourseSummary(data);
-
-}
 
 
 const loadSubjects = async () => {
