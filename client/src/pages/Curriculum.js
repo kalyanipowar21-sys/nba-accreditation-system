@@ -6,7 +6,7 @@ import {
   FaFlask,
   FaCloudUploadAlt,
   FaEdit,
-  FaTrash
+  FaTrash,
 } from "react-icons/fa";
 import { FaDownload, FaPrint, FaEye } from "react-icons/fa";
 

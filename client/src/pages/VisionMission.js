@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./VisionMission.css";
 import { FaDownload, FaPrint } from "react-icons/fa";
+
 function VisionMission({ onNext }) {
 const [vision, setVision] = useState(
 "To be a premier institute recognized for excellence in technical education, research and innovation for the betterment of society."
@@ -20,10 +21,7 @@ const [peo2, setPeo2] = useState(
 const [peo3, setPeo3] = useState(
 "Graduates will demonstrate professional ethics, leadership and teamwork."
 );
-const handleDraft = () => {
-    
-alert("Draft Saved Successfully");
-};
+
 const [visionFile, setVisionFile] = useState(null);
 const [missionFile, setMissionFile] = useState(null);
 const [peoFile1, setPeoFile1] = useState(null);
